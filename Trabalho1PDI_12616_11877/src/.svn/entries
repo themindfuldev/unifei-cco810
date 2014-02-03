@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="10"
+   name=""
+   committed-date="2007-09-13T17:33:22.738912Z"
+   url="https://pdi1187712616.googlecode.com/svn/trunk/EditorMatriz/src"
+   last-author="ygrapow"
+   kind="dir"
+   uuid="5dc954b0-2038-0410-92b8-11115a6f368b"
+   repos="https://pdi1187712616.googlecode.com/svn"
+   revision="10"/>
+<entry
+   committed-rev="19"
+   name="Pixel.java"
+   text-time="2007-09-29T18:42:12.000000Z"
+   committed-date="2007-09-29T20:08:04.351009Z"
+   checksum="179c21e9f23b2440bec972731ac237d2"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="19"/>
+<entry
+   committed-rev="17"
+   name="Corrida.java"
+   text-time="2007-09-29T16:45:10.000000Z"
+   committed-date="2007-09-29T16:59:09.673268Z"
+   checksum="925332bd513c516df895c803aa6d18f1"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="17"/>
+<entry
+   committed-rev="25"
+   name="JanelaDesktop.java"
+   text-time="2007-10-03T18:14:54.000000Z"
+   committed-date="2007-10-03T19:02:17.084891Z"
+   checksum="a953be867873b85fa5b1550133d1863b"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="25"/>
+<entry
+   committed-rev="17"
+   name="Main.java"
+   text-time="2007-09-29T16:45:10.000000Z"
+   committed-date="2007-09-29T16:59:09.673268Z"
+   checksum="974ebc10df88da77a7c65d699ea23d6d"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="17"/>
+<entry
+   committed-rev="17"
+   name="Teste.java"
+   text-time="2007-09-29T16:45:10.000000Z"
+   committed-date="2007-09-29T16:59:09.673268Z"
+   checksum="40aab8d492bc0101911db1c5e0168034"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="17"/>
+<entry
+   name="MatrizImagemOld.java"
+   kind="file"
+   deleted="true"
+   revision="14"/>
+<entry
+   committed-rev="17"
+   name="LeitorArquivo.java"
+   text-time="2007-09-29T16:45:10.000000Z"
+   committed-date="2007-09-29T16:59:09.673268Z"
+   checksum="1769e2f886f5fa9a9d26d48908e297d6"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="17"/>
+<entry
+   committed-rev="25"
+   name="Arquivo.java"
+   text-time="2007-10-03T15:05:18.000000Z"
+   committed-date="2007-10-03T19:02:17.084891Z"
+   checksum="a6f4281916f8135bce52ac59bb196a2d"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="25"/>
+<entry
+   committed-rev="25"
+   name="MatrizImagem.java"
+   text-time="2007-10-03T18:58:02.000000Z"
+   committed-date="2007-10-03T19:02:17.084891Z"
+   checksum="d677eeecd138a0e976d7de9fa1f8fa60"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="25"/>
+<entry
+   committed-rev="25"
+   name="ControlePrincipal.java"
+   text-time="2007-10-03T18:09:38.000000Z"
+   committed-date="2007-10-03T19:02:17.084891Z"
+   checksum="3d7d5257531b008ee29f19692c6c9696"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="25"/>
+<entry
+   committed-rev="26"
+   name="PainelInput.java"
+   text-time="2007-10-03T16:13:40.000000Z"
+   committed-date="2007-10-03T19:04:43.965339Z"
+   checksum="54bdab8050f37cb730c3e8735b5dc77d"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="26"/>
+<entry
+   committed-rev="25"
+   name="FrameInternoImagem.java"
+   text-time="2007-10-03T18:59:38.000000Z"
+   committed-date="2007-10-03T19:02:17.084891Z"
+   checksum="b12120fa7b86d5c308cfdbeb21af8f26"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="25"/>
+<entry
+   name="imagem1.txt"
+   kind="file"
+   deleted="true"
+   revision="15"/>
+<entry
+   committed-rev="25"
+   name="Histograma.java"
+   text-time="2007-10-03T15:44:24.000000Z"
+   committed-date="2007-10-03T19:02:17.084891Z"
+   checksum="58ef15d9d587fe3b6be3bc37ac5b9397"
+   last-author="andrecarvalhosilveira"
+   kind="file"
+   revision="25"/>
+</wc-entries>

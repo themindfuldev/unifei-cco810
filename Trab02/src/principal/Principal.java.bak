@@ -1,0 +1,111 @@
+package principal;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import util.Posicao;
+
+public class Principal {
+
+	public static void main(String[] args) throws Exception {
+		// Declaração
+		int[][] matrizA, matrizB, matrizConvolucao;
+		Posicao posicaoCentralB;
+		int i, j;
+		
+		// Obtenção das matrizes
+		matrizA = getMatriz("matrizA.dat");
+		matrizB = getMatriz("matrizB.dat");		
+		
+		matrizConvolucao = new int[matrizA.length][matrizA[0].length];
+		
+		// Execução das convoluções
+		posicaoCentralB = getPosicaoCentral(matrizB);
+		
+		for (i=0; i<matrizA.length; i++) {
+			for (j=0; j<matrizA[i].length; j++) {
+				matrizConvolucao[i][j] = getConvolucao(matrizA, matrizB, new Posicao(i, j));
+			}
+		}
+		
+		// Impressão da matriz
+		imprimeMatriz(matrizConvolucao);
+		
+	}
+
+	private static int getConvolucao(int[][] matrizA, int[][] matrizB, Posicao posicaoCentral) {
+		int iA, iB, jA, jB, z, dimensaoMetade;
+		
+		z = 0;		
+		dimensaoMetade = matrizB.length/2;
+		for (iA=posicaoCentral.getPosLinha()-dimensaoMetade, iB=0;
+				iB<matrizB.length; 
+				iA++, iB++) {
+			for (jA=posicaoCentral.getPosColuna()-dimensaoMetade, jB=0;
+					jB<matrizB[iB].length; 
+					jA++, jB++) {
+				
+					if (iA < 0 || iA >= matrizA.length ||
+							jA < 0 || jA >= matrizA[iA].length )
+						continue;
+					
+					z += matrizA[iA][jA]*matrizB[iB][jB];
+			}
+		}
+		
+		return z;
+	}
+
+	private static void imprimeMatriz(int[][] matriz) {
+		int i, j;
+		
+		for (i=0; i<matriz.length; i++) {
+			for (j=0; j<matriz[i].length; j++) {
+				System.out.print(matriz[i][j] + "  ");
+			}
+			System.out.println();
+		}		
+	}
+
+	private static Posicao getPosicaoCentral(int[][] matriz) {
+		// Declaração
+		Posicao posicaoCentral;
+		int dimensaoMetade;
+				
+		dimensaoMetade = matriz.length/2;
+		posicaoCentral = new Posicao(dimensaoMetade, dimensaoMetade);
+		
+		return posicaoCentral;
+	}
+
+	private static int[][] getMatriz(String arquivo) throws IOException {
+		// Declaração
+		int linhas, colunas, i, j;
+		int[][] matriz;
+		String[] linha;
+		BufferedReader fluxo;
+		
+		fluxo = new BufferedReader(new FileReader(arquivo));
+		
+		linha = fluxo.readLine().split(" ");
+		
+		linhas = Integer.parseInt(linha[0]);
+		colunas = Integer.parseInt(linha[1]);
+		matriz = new int[linhas][colunas];
+		
+		for (i=0; i<linhas; i++) {
+			matriz[i] = new int[colunas];
+			linha = fluxo.readLine().split(" ");
+			
+			for (j=0; j<colunas; j++) {
+				matriz[i][j] = Integer.parseInt(linha[j]);
+			}
+		}
+		
+		fluxo.close();
+		
+		return matriz;
+	}
+
+}
